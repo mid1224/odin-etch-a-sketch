@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f8f8f8;
+}
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;  /* Adjust to set total grid size */
+    height: 400px; /* Keeps grid square */
+    border: 2px solid black;
+}
+.grid {
+    flex: 1 0 calc(100% / 16); /* Each item is 1/16th of the row */
+    aspect-ratio: 1; /* Ensures perfect square */
+    background-color: lightblue;
+    border: 1px solid white;
+    box-sizing: border-box;
+}
