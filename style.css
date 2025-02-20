@@ -2,13 +2,16 @@ body {
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-direction: column;
     height: 100vh;
     margin: 0;
-    background-color: #f8f8f8;
+    background-color: red;
 }
 #container {
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
     flex-wrap: wrap;
     width: 600px;  /* Adjust to set total grid size */
     height: 600px; /* Keeps grid square */
@@ -17,7 +20,25 @@ body {
 .grid {
     flex: 1 0 calc(100% / 16); /* Each item is 1/16th of the row */
     aspect-ratio: 1; /* Ensures perfect square */
-    background-color: lightblue;
-    border: 1px solid white;
+    background-color: white;
+    border: 1px solid black;
     box-sizing: border-box;
+}
+
+#title {
+    align-self: center;
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    margin-bottom: 20px;
+}
+
+button {
+    align-self: center;
+    font-size: 24px;
+    border: 3px solid black;
+    border-radius: 1dvh;
+    margin: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
 }
